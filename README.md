@@ -132,7 +132,7 @@ Sparse activations
 Noise reduction
 Minimal training (only gate parameters)
 
-🧩** Key Insight**
+**🧩Key Insight**
 
 
 Instead of changing attention itself,
