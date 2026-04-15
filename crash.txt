@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "D:\Transformers_DA2\run.py", line 5, in <module>
+    main.main()
+    ~~~~~~~~~^^
+  File "D:\Transformers_DA2\main.py", line 33, in main
+    train_loader, val_loader = get_dataloaders()
+                               ~~~~~~~~~~~~~~~^^
+  File "D:\Transformers_DA2\data.py", line 37, in get_dataloaders
+    train_data = torch.load(cache_train)
+  File "D:\Transformers_DA2\venv\Lib\site-packages\torch\serialization.py", line 1570, in load
+    
+    ...<5 lines>...
+    )
+  File "D:\Transformers_DA2\venv\Lib\site-packages\torch\serialization.py", line 2190, in _load
+    result = unpickler.load()
+  File "D:\Transformers_DA2\venv\Lib\site-packages\torch\_weights_only_unpickler.py", line 541, in load
+    self.append(self.persistent_load(pid))
+                ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Transformers_DA2\venv\Lib\site-packages\torch\serialization.py", line 2154, in persistent_load
+    typed_storage = load_tensor(
+        dtype, nbytes, key, _maybe_decode_ascii(location)
+    )
+  File "D:\Transformers_DA2\venv\Lib\site-packages\torch\serialization.py", line 2097, in load_tensor
+    zip_file.get_storage_from_record(name, nbytes, torch.UntypedStorage)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 16000 bytes.
