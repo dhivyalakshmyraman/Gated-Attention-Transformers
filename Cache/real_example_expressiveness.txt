@@ -1,0 +1,11 @@
+--- Real Dataset Example: 'The quick brown fox jumps over the lazy dog.' ---
+Target word: 'jumps', Source word: 'fox'
+
+Head 0: Base Attn=0.1548 | Gate=0.5504
+Head 1: Base Attn=0.4011 | Gate=0.5720
+Head 2: Base Attn=0.2982 | Gate=0.6460
+Head 3: Base Attn=0.0001 | Gate=0.5246
+Head 4: Base Attn=0.9498 | Gate=0.6613
+Head 5: Base Attn=0.1064 | Gate=0.5733
+Head 6: Base Attn=0.2054 | Gate=0.5389
+Head 7: Base Attn=0.0144 | Gate=0.5227
